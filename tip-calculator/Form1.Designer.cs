@@ -1,6 +1,6 @@
 ﻿namespace tip_calculator
 {
-    partial class Form1
+    partial class TipCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,6 @@
             this.mealPriceLabel.Size = new System.Drawing.Size(98, 13);
             this.mealPriceLabel.TabIndex = 0;
             this.mealPriceLabel.Text = "Enter price of meal:";
-            this.mealPriceLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // lowTipLabel
             // 
@@ -122,7 +121,7 @@
             this.textBox1.Size = new System.Drawing.Size(92, 20);
             this.textBox1.TabIndex = 8;
             // 
-            // Form1
+            // TipCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,9 +135,9 @@
             this.Controls.Add(this.midTipLabel);
             this.Controls.Add(this.lowTipLabel);
             this.Controls.Add(this.mealPriceLabel);
-            this.Name = "Form1";
+            this.Name = "TipCalculator";
             this.Text = "Lab 2";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.TipCalculator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
