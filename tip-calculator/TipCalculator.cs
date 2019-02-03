@@ -27,7 +27,27 @@ namespace tip_calculator
 
         private void TipCalculator_Load(object sender, EventArgs e)
         {
+        }
 
+        private void calcTipBtn_Click(object sender, EventArgs e)
+        {
+            const double LOW_TIP = .15, MID_TIP = .18, HIGH_TIP = .20; // Constant values for tip percentages in decimal format
+            double lowTipRec, midTipRec, highTipRec; // Undeclared variables that will store the tip recommendations based on tip percentage
+            double cost; // Undeclared variable that will be set when the price is grabbed from the mealPrice object
+
+            cost = Convert.ToDouble(mealPrice.Text);
+
+            lowTipRec = cost * LOW_TIP;
+            midTipRec = cost * MID_TIP;
+            highTipRec = cost * HIGH_TIP;
+
+            lowTipAmt.Text = $"{lowTipRec:C2}";
+            midTipAmt.Text = $"{midTipRec:C2}";
+            highTipAmt.Text = $"{highTipRec:C2}";
+
+            lowTipAmt.Visible = true;
+            midTipAmt.Visible = true;
+            highTipAmt.Visible = true;
         }
     }
 }
