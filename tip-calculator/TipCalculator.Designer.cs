@@ -88,7 +88,7 @@
             // midTipAmt
             // 
             this.midTipAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.midTipAmt.Location = new System.Drawing.Point(131, 113);
+            this.midTipAmt.Location = new System.Drawing.Point(131, 80);
             this.midTipAmt.Name = "midTipAmt";
             this.midTipAmt.Size = new System.Drawing.Size(91, 20);
             this.midTipAmt.TabIndex = 5;
@@ -98,7 +98,7 @@
             // highTipAmt
             // 
             this.highTipAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.highTipAmt.Location = new System.Drawing.Point(131, 80);
+            this.highTipAmt.Location = new System.Drawing.Point(130, 113);
             this.highTipAmt.Name = "highTipAmt";
             this.highTipAmt.Size = new System.Drawing.Size(91, 20);
             this.highTipAmt.TabIndex = 6;
@@ -113,6 +113,7 @@
             this.calcTipBtn.TabIndex = 7;
             this.calcTipBtn.Text = "Calculate Tip";
             this.calcTipBtn.UseVisualStyleBackColor = true;
+            this.calcTipBtn.Click += new System.EventHandler(this.calcTipBtn_Click);
             // 
             // mealPrice
             // 
