@@ -13,11 +13,13 @@ namespace tip_calculator
 {
     public partial class TipCalculator : Form
     {
+        // Initializes the form
         public TipCalculator()
         {
             InitializeComponent();
         }
 
+        // Handler for when a user clicks our button
         private void calcTipBtn_Click(object sender, EventArgs e)
         {
             const double LOW_TIP = .15, MID_TIP = .18, HIGH_TIP = .20; // Constant values for tip percentages in decimal format
