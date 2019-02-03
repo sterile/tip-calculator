@@ -36,7 +36,7 @@
             this.midTipAmt = new System.Windows.Forms.Label();
             this.highTipAmt = new System.Windows.Forms.Label();
             this.calcTipBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.mealPrice = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // mealPriceLabel
@@ -114,19 +114,19 @@
             this.calcTipBtn.Text = "Calculate Tip";
             this.calcTipBtn.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // mealPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(92, 20);
-            this.textBox1.TabIndex = 8;
+            this.mealPrice.Location = new System.Drawing.Point(130, 19);
+            this.mealPrice.Name = "mealPrice";
+            this.mealPrice.Size = new System.Drawing.Size(92, 20);
+            this.mealPrice.TabIndex = 8;
             // 
             // TipCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(276, 197);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.mealPrice);
             this.Controls.Add(this.calcTipBtn);
             this.Controls.Add(this.highTipAmt);
             this.Controls.Add(this.midTipAmt);
@@ -153,7 +153,7 @@
         private System.Windows.Forms.Label midTipAmt;
         private System.Windows.Forms.Label highTipAmt;
         private System.Windows.Forms.Button calcTipBtn;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox mealPrice;
     }
 }
 
