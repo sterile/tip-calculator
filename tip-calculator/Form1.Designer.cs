@@ -28,95 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.mealPriceLabel = new System.Windows.Forms.Label();
+            this.lowTipLabel = new System.Windows.Forms.Label();
+            this.midTipLabel = new System.Windows.Forms.Label();
+            this.highTipLabel = new System.Windows.Forms.Label();
+            this.lowTipAmt = new System.Windows.Forms.Label();
+            this.midTipAmt = new System.Windows.Forms.Label();
+            this.highTipAmt = new System.Windows.Forms.Label();
+            this.calcTipBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // mealPriceLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.mealPriceLabel.AutoSize = true;
+            this.mealPriceLabel.Location = new System.Drawing.Point(12, 22);
+            this.mealPriceLabel.Name = "mealPriceLabel";
+            this.mealPriceLabel.Size = new System.Drawing.Size(98, 13);
+            this.mealPriceLabel.TabIndex = 0;
+            this.mealPriceLabel.Text = "Enter price of meal:";
+            this.mealPriceLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lowTipLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(75, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lowTipLabel.AutoSize = true;
+            this.lowTipLabel.Location = new System.Drawing.Point(75, 48);
+            this.lowTipLabel.Name = "lowTipLabel";
+            this.lowTipLabel.Size = new System.Drawing.Size(27, 13);
+            this.lowTipLabel.TabIndex = 1;
+            this.lowTipLabel.Text = "15%";
             // 
-            // label3
+            // midTipLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(75, 81);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.midTipLabel.AutoSize = true;
+            this.midTipLabel.Location = new System.Drawing.Point(75, 81);
+            this.midTipLabel.Name = "midTipLabel";
+            this.midTipLabel.Size = new System.Drawing.Size(27, 13);
+            this.midTipLabel.TabIndex = 2;
+            this.midTipLabel.Text = "18%";
             // 
-            // label4
+            // highTipLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(75, 114);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.highTipLabel.AutoSize = true;
+            this.highTipLabel.Location = new System.Drawing.Point(75, 114);
+            this.highTipLabel.Name = "highTipLabel";
+            this.highTipLabel.Size = new System.Drawing.Size(27, 13);
+            this.highTipLabel.TabIndex = 3;
+            this.highTipLabel.Text = "20%";
             // 
-            // label5
+            // lowTipAmt
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(152, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.lowTipAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lowTipAmt.Location = new System.Drawing.Point(131, 47);
+            this.lowTipAmt.Name = "lowTipAmt";
+            this.lowTipAmt.Size = new System.Drawing.Size(91, 21);
+            this.lowTipAmt.TabIndex = 4;
+            this.lowTipAmt.Text = "$0.00";
+            this.lowTipAmt.Visible = false;
             // 
-            // label6
+            // midTipAmt
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(152, 81);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.midTipAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.midTipAmt.Location = new System.Drawing.Point(131, 113);
+            this.midTipAmt.Name = "midTipAmt";
+            this.midTipAmt.Size = new System.Drawing.Size(91, 20);
+            this.midTipAmt.TabIndex = 5;
+            this.midTipAmt.Text = "$0.00";
+            this.midTipAmt.Visible = false;
             // 
-            // label7
+            // highTipAmt
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(152, 114);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.highTipAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.highTipAmt.Location = new System.Drawing.Point(131, 80);
+            this.highTipAmt.Name = "highTipAmt";
+            this.highTipAmt.Size = new System.Drawing.Size(91, 20);
+            this.highTipAmt.TabIndex = 6;
+            this.highTipAmt.Text = "$0.00";
+            this.highTipAmt.Visible = false;
             // 
-            // button1
+            // calcTipBtn
             // 
-            this.button1.Location = new System.Drawing.Point(91, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.calcTipBtn.Location = new System.Drawing.Point(99, 148);
+            this.calcTipBtn.Name = "calcTipBtn";
+            this.calcTipBtn.Size = new System.Drawing.Size(78, 23);
+            this.calcTipBtn.TabIndex = 7;
+            this.calcTipBtn.Text = "Calculate Tip";
+            this.calcTipBtn.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 19);
+            this.textBox1.Location = new System.Drawing.Point(130, 19);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 20);
+            this.textBox1.Size = new System.Drawing.Size(92, 20);
             this.textBox1.TabIndex = 8;
             // 
             // Form1
@@ -125,14 +128,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(276, 197);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.calcTipBtn);
+            this.Controls.Add(this.highTipAmt);
+            this.Controls.Add(this.midTipAmt);
+            this.Controls.Add(this.lowTipAmt);
+            this.Controls.Add(this.highTipLabel);
+            this.Controls.Add(this.midTipLabel);
+            this.Controls.Add(this.lowTipLabel);
+            this.Controls.Add(this.mealPriceLabel);
             this.Name = "Form1";
             this.Text = "Lab 2";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -143,14 +146,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label mealPriceLabel;
+        private System.Windows.Forms.Label lowTipLabel;
+        private System.Windows.Forms.Label midTipLabel;
+        private System.Windows.Forms.Label highTipLabel;
+        private System.Windows.Forms.Label lowTipAmt;
+        private System.Windows.Forms.Label midTipAmt;
+        private System.Windows.Forms.Label highTipAmt;
+        private System.Windows.Forms.Button calcTipBtn;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
