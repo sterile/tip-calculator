@@ -138,7 +138,6 @@
             this.Controls.Add(this.mealPriceLabel);
             this.Name = "TipCalculator";
             this.Text = "Lab 2";
-            this.Load += new System.EventHandler(this.TipCalculator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
