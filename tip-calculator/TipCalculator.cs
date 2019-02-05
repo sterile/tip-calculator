@@ -32,9 +32,9 @@ namespace tip_calculator
             midTipRec = cost * MID_TIP;
             highTipRec = cost * HIGH_TIP;
 
-            lowTipAmt.Text = $"{lowTipRec:C2}";
-            midTipAmt.Text = $"{midTipRec:C2}";
-            highTipAmt.Text = $"{highTipRec:C2}";
+            lowTipAmt.Text = $"{lowTipRec:C}";
+            midTipAmt.Text = $"{midTipRec:C}";
+            highTipAmt.Text = $"{highTipRec:C}";
 
             lowTipAmt.Visible = true;
             midTipAmt.Visible = true;
